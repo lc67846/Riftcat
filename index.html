@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html class="mc" ng-app="riftcat" ng-controller="mainController as mainCtrl" ng-strict-di>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#263238">
+<link rel="icon" type="image/vnd.microsoft.icon" href="/Content/images/mc/favicon.ico" />
+<link rel="preload" href="/Content/fonts/Lato-Regular.ttf" as="font" crossorigin />
+<link rel="preload" href="/Content/material-design-icons/fonts/materialdesignicons-webfont.woff?v=1.9.32" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/Content/images/vridge/videoloadingplaceholder.jpg" as="image" />
+<title>VRidge - Play PC VR on your Cardboard</title>
+<meta name="description" content="Use VRidge with your PC to turn your Cardboard into powerful PC VR headset. Play games designed for high end quality headsets." />
+<meta property="og:title" content="VRidge - Play PC VR on your Cardboard" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://riftcat.com//vridge" />
+<meta property="og:description" content="Use VRidge with your PC to turn your Cardboard into powerful PC VR headset. Play games designed for high end quality headsets." />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="https://riftcat.com/Content/images/metaOg.jpg" />
+<meta property="twitter:site" content="&#64;RiftCat" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="VRidge - Play PC VR on your Cardboard" />
+<meta property="twitter:description" content="Use VRidge with your PC to turn your Cardboard into powerful PC VR headset. Play games designed for high end quality headsets." />
+<meta property="twitter:image" content="https://riftcat.com/Content/images/metaTw.jpg" />
+<meta name="Search_title" content="VRidge - Play PC VR on your Cardboard">
+<meta name="Search_Image" content="https://riftcat.com/Content/images/metaOg.jpg">
+<meta name="Search_intro" content="Use VRidge with your PC to turn your Cardboard into powerful PC VR headset. Play games designed for high end quality headsets.">
+<style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+
+        .app-preload {
+            text-align: center;
+            margin: 0 auto;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            position: fixed;
+            font-size: x-large;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+            .app-preload p {
+                margin: 5px;
+                margin-top: 10px;
+            }
+
+            .app-preload span {
+                font-weight: bold;
+            }
+
+            .app-preload > .preload-spinner {
+                background: url('/Content/images/spinner.png') no-repeat;
+                background-size: cover;
+                height: 100px;
+                width: 100px;
+                margin: 0 auto;
+                -webkit-animation: rotation 1s infinite linear;
+                -moz-animation: rotation 1s infinite linear;
+                -o-animation: rotation 1s infinite linear;
+                animation: rotation 1s infinite linear;
+            }
+
+        @-webkit-keyframes rotation {
+            from {
+                -webkit-transform: rotate(359deg);
+            }
+
+            to {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+
+        @keyframes rotation {
+            from {
+                -webkit-transform: rotate(359deg);
+            }
+
+            to {
+                -webkit-transform: rotate(0deg);
+            }
+        }
+    </style>
+<base href="/" />
+<script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] ||
+                function() {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-59277792-1', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('require', 'GTM-MTSWDNV');
+        ga('set', 'transport', 'beacon');
+
+    </script>
+
+<script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '579494752222378');
+    </script>
+<noscript>
+        <img height="1" width="1" style="display: none"
+             src="https://www.facebook.com/tr?id=579494752222378&ev=PageView&noscript=1"/>
+    </noscript>
+
+<script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 863361649;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+    </script>
+<div style="display:none">
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">            
+        </script>
+</div>
+<noscript>
+        <div style="display:inline;">
+            <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/863361649/?guid=ON&amp;script=0" />
+        </div>
+    </noscript>
+<!--[if IE]>
+
+    <link rel="stylesheet" href="/bundles/matcatcss?v=Rlc7HlVrNmbF9l6OdG5n7B4x_R61ZHrNpaZofK9kAxs1&usecf=true"></link>
+
+    <![endif]-->
+<script type='text/javascript'>
+        var appInsights = window.appInsights || function (config) {
+            function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } }
+            var t = { config: config }, u = document, e = window, o = 'script', s = u.createElement(o), i, f; for (s.src = config.url || '//az416426.vo.msecnd.net/scripts/a/ai.0.js', u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ['Event', 'Exception', 'Metric', 'PageView', 'Trace', 'Ajax']; i.length;)r('track' + i.pop()); return r('setAuthenticatedUserContext'), r('clearAuthenticatedUserContext'), config.disableExceptionTracking || (i = 'onerror', r('_' + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o), s }), t
+        }({
+            instrumentationKey: '6bf46bc8-e3e2-49a0-9e46-559fe410ac50'
+        });
+
+    window.appInsights = appInsights;
+
+    if (appInsights && appInsights.queue) {
+        appInsights.queue.push(function () {
+                appInsights.context.addTelemetryInitializer(function (envelope) {
+                    var item = envelope.data.baseData;
+                    envelope.tags["ai.user.id"] = "fca28262-4132-4b84-8065-b309ae740684";
+                });
+        });
+        appInsights.trackPageView();
+    }
+</script>
+</head>
+<body class="md-riftcat-theme">
+<!--[if !IE]>-->
+<link rel="stylesheet" href="/bundles/matcatcss?v=Rlc7HlVrNmbF9l6OdG5n7B4x_R61ZHrNpaZofK9kAxs1&usecf=true"></link>
+<!--[endif]-->
+<input name="__RequestVerificationToken" type="hidden" value="lUBNvDq-jOYEOm2IuOPWtSw9H3hDia0hdLwQj9M-KyeEptJnCVwRadojQvRIl8_cXphzQ13C6HRu2gArnacQfD7-3M08yrpm0jUfpVkCIPY1" />
+<div ng-if="::false" class="app-preload">
+<div class="preload-spinner">
+</div>
+<p>
+<span>Connecting</span> to RiftCat...
+</p>
+</div>
+<div id="containment" ng-cloak>
+<div id="header" class-on-scroll anchor-id="main-video" class-to-apply="noopacity" ng-class="{'noopacity': !mainCtrl.isVridgeLanding()}" ng-cloak>
+<div class="header-horizontal-scaling center-horizontal" layout="column">
+<div id="header-static" layout="row" ng-cloak>
+<div>
+<a href="/vridge">
+<div id="logo-top-bar"></div>
+</a>
+</div>
+<div flex>
+</div>
+<div hide-xs hide-sm hide-md class="menu-items" layout="row">
+<md-button ng-click="mainCtrl.openLogin($event);" ng-show="!auth.isAuth && !isAuthPage()" ng-cloak aria-label="Login">{{ 'LoginLabel' | translate }}</md-button>
+<md-button ng-click="mainCtrl.openAccountManagement();" ng-show="auth.isAuth && !isAuthPage()" ng-cloak aria-label="Account">{{mainCtrl.auth.user.DisplayName}}</md-button>
+<md-button ng-if="!mainCtrl.isRiftCat" ng-click="mainCtrl.openRegister($event);" ng-show="!auth.isAuth && !isAuthPage()" ng-cloak aria-label="Register">{{ 'RegisterLabel' | translate }}</md-button>
+<md-button ng-if="!mainCtrl.isRiftCat" ng-click="mainCtrl.logout();" ng-show="auth.isAuth && !isAuthPage()" ng-cloak aria-label="Logout">{{ 'LogoutLabel' | translate }}</md-button>
+</div>
+<div hide-xs hide-sm hide-md class="topbar-social-icons" layout="row">
+<a href="https://www.youtube.com/channel/UC0aWD0l_a9xRaXaVRV8QhYw" target="_blank">
+<div class="header-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-youtube-play"></md-icon>
+</div>
+</a>
+<a href="https://www.facebook.com/RiftCat" target="_blank">
+<div class="header-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-facebook"></md-icon>
+</div>
+</a>
+<a href="https://twitter.com/RiftCat" target="_blank">
+<div class="header-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-twitter"></md-icon>
+</div>
+</a>
+<div class="language-select-container">
+<md-select ng-model="mainCtrl.selectedLanguage" id="languageSelect" ng-change="mainCtrl.langChanged()" class="language-select">
+<md-select-label class="flag-label">
+<img ng-src="{{mainCtrl.selectedFlagSrc}}" class="language-flag" />
+</md-select-label>
+<md-option ng-repeat="language in mainCtrl.supportedLanguages" ng-value="language.lang" class="flag-option">
+<div layout="row">
+<img ng-src="{{language.flagSrc}}" class="language-flag" />
+<span class="language-flag-label">{{language.name}}</span>
+</div>
+</md-option>
+</md-select>
+</div>
+</div>
+<md-button hide-gt-md ng-click="showMenuFunc()" id="hamburger-menu" class="md-icon-button" aria-label="Menu" ng-cloak>
+<md-icon md-font-icon="mdi mdi-menu" ng-hide="!hideMenu"></md-icon>
+<md-icon md-font-icon="mdi mdi-close" ng-hide="hideMenu"></md-icon>
+</md-button>
+</div>
+<div id="header-expander" ng-class="{'expanded-header': !hideMenu}" hide-gt-md ng-cloak>
+<div class="header-horizontal-scaling center-horizontal">
+<div class="topbar-social-icons" layout="row">
+<a href="https://www.youtube.com/channel/UC0aWD0l_a9xRaXaVRV8QhYw">
+<div class="header-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-youtube-play"></md-icon>
+</div>
+</a>
+<a href="https://www.facebook.com/RiftCat">
+<div class="header-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-facebook"></md-icon>
+</div>
+</a>
+<a href="https://twitter.com/RiftCat">
+<div class="header-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-twitter"></md-icon>
+</div>
+</a>
+<div class="language-select-container">
+<md-select ng-model="mainCtrl.selectedLanguage" ng-change="mainCtrl.langChanged()" class="language-select">
+<md-select-label class="flag-label">
+<img ng-src="{{mainCtrl.selectedFlagSrc}}" class="language-flag" />
+</md-select-label>
+<md-option ng-repeat="language in mainCtrl.supportedLanguages" ng-value="language.lang" class="flag-option">
+<img ng-src="{{language.flagSrc}}" class="language-flag" />
+</md-option>
+</md-select>
+</div>
+</div>
+<div class="menu-items" layout="column">
+<md-button ng-click="mainCtrl.openLogin($event);" ng-show="!auth.isAuth" ng-cloak aria-label="Login">{{ 'LoginLabel' | translate }}</md-button>
+<md-button ng-click="mainCtrl.openAccountManagement();" ng-show="auth.isAuth" ng-cloak aria-label="Account">{{mainCtrl.auth.user.DisplayName}}</md-button>
+<md-button ng-if="!mainCtrl.isRiftCat" ng-click="mainCtrl.openRegister($event);" ng-show="!auth.isAuth" ng-cloak aria-label="Register">{{ 'RegisterLabel' | translate }}</md-button>
+<md-button ng-if="!mainCtrl.isRiftCat" ng-click="mainCtrl.logout();" ng-show="auth.isAuth" ng-cloak aria-label="Logout">{{ 'LogoutLabel' | translate }}</md-button>
+</div>
+</div>
+</div>
+<div class="expanded-header-overlay" ng-class="{'disable-overlay': hideMenu}" ng-click="showMenuFunc()" hide-gt-md ng-cloak> </div>
+</div>
+</div>
+<div id="content-container" ng-class="{'landing-container': mainCtrl.isVridgeLanding()}" ng-cloak>
+<div id="content" flex ui-view class="x-fade">
+</div>
+</div>
+<footer id="footer" ng-cloak>
+<div class="footer-horizontal-scaling center-horizontal footer-content" flex ng-cloak>
+<div layout="column" flex ng-cloak>
+<div id="footer-links">
+<span><a ui-sref="team">{{ 'CompanyInfoLabel' | translate }}</a><span> •</span></span>
+<span><a ui-sref="contact">{{ 'ContactLabel' | translate }}</a><span> •</span></span>
+<span><a ui-sref="media">{{ 'MediaKitLabel' | translate }}</a><span hide-sm> •</span></span>
+<span><a href="https://support.riftcat.com/hc/" target="_blank">{{ 'HelpCenterLabel' | translate }}</a><span hide-gt-sm> •</span></span>
+<span><a ui-sref="legal.tos">{{ 'TermsOfServiceLabel' | translate }}</a><span hide-sm> •</span></span>
+<span><a ui-sref="legal.pp">{{ 'PrivacyPolicyLabel' | translate }}</a><span> •</span></span>
+<span><a href="https://github.com/RiftCat/vridge-api/" target="_blank">API</a></span>
+</div>
+<div id="footer-social-icons" layout="row">
+<a href="https://www.facebook.com/RiftCat/" target="_blank">
+<div>
+<div id="bg-facebook" class="footer-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-facebook"></md-icon>
+</div>
+</div>
+</a>
+<a href="https://www.reddit.com/r/vridge/" target="_blank">
+<div>
+<div id="bg-reddit" class="footer-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-reddit"></md-icon>
+</div>
+</div>
+</a>
+<a href="https://twitter.com/RiftCat" target="_blank">
+<div>
+<div id="bg-twitter" class="footer-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-twitter"></md-icon>
+</div>
+</div>
+</a>
+<a href="https://www.youtube.com/channel/UC0aWD0l_a9xRaXaVRV8QhYw" target="_blank">
+<div>
+<div id="bg-youtube" class="footer-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-youtube-play"></md-icon>
+</div>
+</div>
+</a>
+<a href="http://blog.riftcat.com/" target="_blank">
+<div>
+<div id="bg-blog" class="footer-social-icon" ng-cloak>
+<md-icon md-font-icon="mdi mdi-blogger"></md-icon>
+</div>
+</div>
+</a>
+</div>
+<div id="disclaimer">
+<span>© 2015-2021 RiftCat Sp. z o. o., Żurawia 71/2.30 Białystok, {{ 'PolandLabel' | translate }}, KRS 0000561611, NIP 9662097894, REGON 361696909 <br /> {{ 'Disclaimer' | translate }}</span>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<script defer src="/bundles/matcatjs?v=w9-xy7_uq7tQNuPyLAv04A59_vFvkDCK3Agaqg0o6HY1&usecf=true"></script>
+
+<script id="ze-snippet" defer src="https://static.zdassets.com/ekr/snippet.js?key=0f2ba06f-73a7-4ab8-a1d7-8929dc4b6a3c"></script>
+
+</body>
+</html>
+
